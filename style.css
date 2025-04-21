@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, purple, pink);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Navigation */
+nav {
+  background-color: green;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: purple;
+}
+
+/* About Section */
+#about {
+  background-color: #f0f0ff;
+  padding: 40px 0;
+}
+
+/* Products Section */
+#products {
+  background-color: #e0ffe0;
+  padding: 40px 0;
+}
+
+#products ul {
+  list-style: inside square;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+#products li {
+  margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 images in 1 row */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 image per row on very small screens */
+  }
+}
+
+
+/* Contact Section */
+#contact {
+  background-color: #ffffe0;
+  padding: 40px 0;
+}
+
+.contact-details {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-details p,
+.contact-details a {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-details .btn.yellow {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-details .btn.yellow:hover {
+  background-color: gold;
+}
+
+/* Footer */
+footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-details {
+    gap: 15px;
+  }
+
+  .contact-details p,
+  .contact-details a {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
